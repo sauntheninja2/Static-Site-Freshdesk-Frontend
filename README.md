@@ -1,0 +1,1 @@
+"# Static-Site-Freshdesk-Frontend" 
