@@ -1,1 +1,1 @@
-"# Static-Site-Freshdesk-Frontend" 
+ Static-Site-Freshdesk-Frontend
