@@ -1,0 +1,19 @@
+.container{
+    margin-top: 50px;
+}
+
+
+
+.mb-3{
+    position: absolute;
+    right:  527px;
+    margin-top: auto;
+}
+
+.typography {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+.custom-margin-top{
+    margin-top: 20px;
+}
