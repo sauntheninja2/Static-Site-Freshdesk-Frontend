@@ -4,6 +4,7 @@ import './HomeComponent.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Pagination from './Pagination';
+import Records from './Records';
 
 
 
@@ -35,7 +36,7 @@ export default function Home()
     const indexOfLastRecord = currentPage * recordsPerPage;
     const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
 
-    const data2 = data.slice(indexOfFirstRecord,indexOfLastRecord);
+    const currentRecords = data.slice(indexOfFirstRecord,indexOfLastRecord);
     const nPages = Math.ceil(data.length / recordsPerPage)
 
     
@@ -43,11 +44,7 @@ export default function Home()
     return(
         <>
         <Stack gap={3}>
-            <div>
-            {data.map((ticket) => (
-                <div className='p-2' key={ticket.ticketID}>{ticket.title}</div>
-            ))}
-            </div>
+          <Records data={currentRecords}/>
         <Pagination
             nPages={nPages}
             currentPage={currentPage}
