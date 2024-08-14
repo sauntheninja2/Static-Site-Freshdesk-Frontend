@@ -5,12 +5,21 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Pagination from './Pagination';
 import Records from './Records';
+import { useNavigate } from 'react-router-dom';
+import TicketComponent from './TicketComponent';
 
 
 
 export default function Home()
 {
+    const navigate = useNavigate()
+
+    const TicketComponent=()=>{
+        navigate("/getTicket/:id");
+    }
+
     
+
 
     const [data,setData] = useState([]);
 
@@ -32,19 +41,16 @@ export default function Home()
     useEffect(() => {
         fetchData();
     },[]);
-
     const indexOfLastRecord = currentPage * recordsPerPage;
     const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
 
     const currentRecords = data.slice(indexOfFirstRecord,indexOfLastRecord);
     const nPages = Math.ceil(data.length / recordsPerPage)
-
-    
    
     return(
         <>
         <Stack gap={3}>
-          <Records data={currentRecords}/>
+          <Records data={currentRecords} />
         <Pagination
             nPages={nPages}
             currentPage={currentPage}
@@ -56,3 +62,4 @@ export default function Home()
     )
 }
 
+//Need to fix the higlights of the div when its visited

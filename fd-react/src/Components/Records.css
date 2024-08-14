@@ -1,0 +1,28 @@
+:root {
+    --bs-focus-ring-color: none;
+    --bs-btn-focus-box-shadow: none;
+    --bs-btn-focus-outline: none;
+  }
+
+  .ticket-component .custom-link {
+    background: unset !important;
+    color: unset !important;
+    text-decoration: none !important;
+    outline: none !important;
+    border: none !important;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  .ticket-component .custom-link:focus,
+  .ticket-component .custom-link:active {
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .custom-link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }  

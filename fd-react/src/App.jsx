@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import HomeComponent from "./Components/HomeComponent";
 import { BrowserRouter as Router, Route, Link, Routes , redirect} from "react-router-dom";
 import NewTicketForm from "./Components/NewTicketForm";
+import TicketComponent from "./Components/TicketComponent";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomeComponent />} />
         <Route path="/home" element={<HomeComponent />} />
         <Route path="/createTicket" element={<NewTicketForm />} />
+        <Route path="/getTicket/:id" element={<TicketComponent />} />
       </Routes>
       </Router>
     </>
