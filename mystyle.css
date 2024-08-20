@@ -1,0 +1,68 @@
+
+html {overflow-x: hidden;}
+.navbar {
+    width: 100%;
+}
+    
+
+#border-header{
+    display: block;
+    width: 100%;
+    border-style:ridge;
+
+
+
+}
+
+.p-1 {
+    display: block;
+    width: 95%;
+    border-style:ridge;
+    margin-left: 40px;
+
+}
+
+.content-1 {
+    height: 150px;
+    width: 950px;
+    background-color: gainsboro;
+    margin-left: 40px;
+}
+
+.content-2 {
+    height: 150px;
+    width: 950px;
+    background-color: gainsboro;
+    margin-left: 40px;
+}
+
+.content-3 {
+    height: 150px;
+    width: 950px;
+    background-color: gainsboro;
+    margin-left: 40px;
+}
+
+
+.text-content {
+    margin-left: 40px;
+
+}
+
+.comment-box {
+    margin-left: 40px;
+}
+
+
+.content-container {
+    display: flex;
+}
+
+.btn {
+
+    position: absolute;
+    right:  527px;
+    margin-top: auto;
+
+}
+

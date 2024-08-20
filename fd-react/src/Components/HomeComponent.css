@@ -4,5 +4,12 @@
     border-style:ridge;
     margin-left: 40px;
     margin-top: 20px;
+    border-color: white;
 
 }   
+
+.p-2:visited{
+    border-style: hidden;
+    outline: none;
+    border-color: palegreen;
+}

@@ -8,7 +8,7 @@ const Records = ({data}) => {
         {data.map((ticket) => (
            <Link className="custom-link" to={`/getTicket/${ticket.ticketID}`}style={{ background: 'unset', 
             color: 'inherit', 
-            textDecoration: 'none'}}><div className='p-2' key={ticket.ticketID}>{ticket.title}
+            textDecoration: 'none',textDecorationColor: 'none'}}><div className='p-2' key={ticket.ticketID}>{ticket.title}
             </div>
             </Link>
         ))}
@@ -18,3 +18,4 @@ const Records = ({data}) => {
 }
 
 export default Records
+
