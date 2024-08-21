@@ -35,7 +35,7 @@ export default function TicketComponent(props)
 
 </div>
         <Form>
-            <Form.Group className='p-3' controlId="desc">
+            <Form.Group className='p-3' controlId="desc" form-color-width="5rem">
                 <Form.Label className='fw-bold'>Your Reply</Form.Label>
                 <FormControl name="description" as="textarea" className='w-60' rows={5} />
             </Form.Group>

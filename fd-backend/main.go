@@ -35,5 +35,7 @@ func FreshDeskApi() *chi.Mux {
 	router.Post("/api/v1/createTicket", createTicket)
 	router.Get("/api/v1/getTickets", getAllTickets)
 	router.Get("/api/v1/getTicket/{id}", getTicketByID)
+	router.Get("/api/v1/getTicket/{id}/comment", getCommentByTicketID)
+	router.Post("/api/v1/getTicket/{id}/comment", createComment)
 	return router
 }
