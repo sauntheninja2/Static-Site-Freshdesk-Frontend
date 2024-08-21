@@ -17,6 +17,9 @@ function App() {
         <Route path="/home" element={<HomeComponent />} />
         <Route path="/createTicket" element={<NewTicketForm />} />
         <Route path="/getTicket/:id" element={<TicketComponent />} />
+        <Route path="/getTicket/:id/comment" element={<TicketComponent />} />
+        <Route path="/getTicket/:id/comment" element={<TicketComponent />} />
+        <Route path="/getTicket/:id" element={<TicketComponent />} />
       </Routes>
       </Router>
     </>
